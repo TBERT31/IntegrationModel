@@ -1,0 +1,45 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+}
+
+body, html, header {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: "poppins";
+}
+
+header {
+    height: 100vh;
+    background-image: url(./img/foret.png);
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+header span::before{
+    content: "un homme.";
+    animation: anim 8s infinite;
+}
+
+@keyframes anim {
+    0%{
+        content: "un homme.";
+    }
+    25%{
+        content: "un guerrier.";
+    }
+    50%{
+        content: "courageux.";
+    }
+    75%{
+        content: "perséverant.";
+    }
+}

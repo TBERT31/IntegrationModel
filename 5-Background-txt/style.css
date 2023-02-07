@@ -1,0 +1,48 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+}
+
+.h100 {
+    height: 100vh;
+}
+
+body, html, header, h1 {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: "poppins";
+}
+
+section{
+    background: radial-gradient(#005caf, #002357);
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25rem;
+    font-weight: bold;
+    background: url(./img/liberty.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bg 5s infinite;
+}
+
+@keyframes bg {
+    0%{
+        background-position: left 0px center 0px;
+    }
+    50%{
+        background-position: left 0px top -20px;
+    }
+    100%{
+        background-position: center 0px center 0px;
+    }
+}

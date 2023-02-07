@@ -1,0 +1,159 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+
+.loupe img{
+    width: 30px;
+}
+
+h1, h2, a{
+    color: white;
+}
+
+header a {
+    color: white !important;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header ul li a{
+    font-weight: 400;
+}
+
+.max{
+    max-width: 1600px;
+    margin: auto;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.h-40{
+    height: 40%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section h1{
+    font-size: 5rem;
+    letter-spacing: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 0 0 10px #fff;
+}
+
+section p {
+    color: #929292;
+    line-height: 3rem;
+}
+
+section a{
+    font-size: 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+ul.timeline{
+    list-style-type: none;
+    position: relative;
+}
+
+ul.timeline::before {
+    content: "";
+    background: #2c0b5f;
+    display: inline-block;
+    position: absolute;
+    left: -1px;
+    width: 2px;
+    height: 75%;
+    z-index: 400;
+}
+
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul.timeline > li::before {
+    content: '';
+    background: #de0295;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    z-index: 400;
+    box-shadow: 0 0 4px 5px #45158e;
+    margin-top: 6px;
+}
+
+.menu-icon img{
+    width: 30px;
+}
+
+.navbar-toggler-icon{
+    color: white;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media (min-width: 1300px){
+    section .padding-left{
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 991px){
+    section .col-lg-6{
+        text-align: center;
+        text-shadow: 0px 0px 10px #fff;
+    }
+
+    section p {
+        color: white;
+    }
+
+    section .col-lg-2 {
+        display: flex;
+        writing-mode: vertical-rl;
+        position: relative;
+        align-items: center;
+        top: 45%;
+    }
+
+    ul.timeline::before {
+       width: 68%;
+       height: 2px;
+       left: 70px; 
+    }
+
+    ul.timeline > li::before {
+        right: 19px;
+        margin-top: -25px;
+        display: flex;
+        position: relative;
+    }
+    .h-40{
+        height: 60%;
+    }
+}
+
+@media (max-width: 500px){
+    section h1{
+        font-size: 3rem;
+
+    }
+}

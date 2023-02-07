@@ -1,0 +1,139 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+}
+
+.h100 {
+    height: 100vh;
+}
+
+body, html, header {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: "poppins";
+}
+
+img {
+    width: 100px;
+}
+
+header .big-card{
+    position: relative;
+    max-width: 450px;
+    max-height: 100%;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+@media (max-width: 500px) {
+    header .big-card{
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        max-width: none;
+    }
+}
+
+header .big-card::before{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(to bottom right, rgb(178,48,196), rgb(44,144,238) 100%);
+}
+
+header .card-1::before{
+    transform: skew(3deg, 3deg);
+}
+
+header .card-2::before{
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    top: -10px;
+    border-radius: 20px;
+}
+
+header .card-3::before{
+    transform: skew(-3deg, -3deg);
+}
+
+.mini-pic {
+    position: absolute;
+    width: 75px;
+    z-index: 99;
+    top: -35px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+header .big-card::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    border: 2px solid rgb(0,89,255);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+header .big-card:hover::after{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+header .small-card{
+    position: relative;
+}
+
+header .small-card::after{
+    content: "Niveau : Confirmé";
+    position: absolute;
+    width: 200px;
+    background-color: white;
+    border: 2px solid #b031c4;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%);
+    border-radius: 25px;
+    opacity: 0;
+    transition: 0.2s;
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+header .big-card:hover .small-card::after{
+    bottom: -20px;
+    opacity: 1;
+}
+
+header .content h1 {
+    position: relative;
+    padding-top: 70px;
+}
+
+header .content h1::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    background-color: rgba(119,0,255);
+    left: 50%;
+    bottom: -25px;
+    transform: translate(-50%);
+}
+
+header .content p {
+    font-size: 1.1rem;
+}

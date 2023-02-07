@@ -1,0 +1,21 @@
+body{
+    background: #202020;
+}
+
+.container{
+    height: 5000px;
+}
+
+svg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    margin: auto;
+    
+    stroke: #fff;
+    stroke-width: 2px;
+    fill: none;
+}

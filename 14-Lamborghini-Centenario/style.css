@@ -1,0 +1,92 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+}
+
+body, section{
+    overflow: hidden;
+}
+
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, #111318 50%, #dddddd 50%);
+}
+
+section::before{
+    content: url(./img/lambo.png);
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+section::after{
+    content: url(./img/line.png);
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.title{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title h1{
+    font-family: "Gelano", sans-serif;
+    color: #1d1e22;
+    font-size: 14vw;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.title span {
+    color: #bfbfbe;
+}
+
+.title img {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+}
+
+.button {
+    position: fixed;
+    text-align: center;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.button a {
+    color: #221c17;
+    background-color: #cca530;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.button a i {
+    padding-left: 15px;
+    align-self: center;
+}
+
+@media (max-width: 1600px) {
+    .title img{
+        width: 455px;
+    }
+}
+
+@media (max-width: 500px) {
+    .title img{
+        width: 300px;
+    }
+}

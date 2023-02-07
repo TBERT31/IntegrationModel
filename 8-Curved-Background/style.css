@@ -1,0 +1,63 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body, html, header {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+    overflow: hidden;
+}
+
+.sec1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    height: 100%;
+}
+
+.content h1, .content p{
+    position: relative;
+    text-align: center;
+    top: 35%;
+    margin: 0;
+    color: white;
+}
+
+.content h1{
+    font-size: 5rem;
+}
+
+.content p{
+    font-size: 1.2rem;
+}
+
+.sec1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(to left, #00c6dd, #0072ff);
+    z-index: -1;
+    border-radius: 0% 0% 50% 50%;
+    transform: scaleX(1.5);
+    opacity: 0.3;
+}
+
+.sec1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(to left, #00c6dd, #0072ff);
+    z-index: -1;
+    border-radius: 0% 0% 50% 50%;
+    transform: scaleX(1.3);
+}

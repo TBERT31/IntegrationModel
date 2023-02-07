@@ -1,0 +1,198 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+.landing{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(144deg, #0c151e 55%, #500000 100%);
+}
+
+.landing::before{
+    content: url(./img/imperial.svg); 
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    transform: translate(-50%,-50%) scale(0.9);
+}
+
+.red-card{
+    position: absolute;
+    width: 550px;
+    height: 600px;
+    background-color: #cc3241;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #cc3241;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -50%);
+}
+
+.red-card::before{
+    content: url(./img/star-wars-90-d.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 10px;
+}
+
+.trooper-card{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    background-color: #0e1823;
+    border-radius: 30px;
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.3);
+    top: 50%;
+    left: 50.5%;
+    transform: translateY(-50%);
+}
+
+.trooper-card::before{
+    content: "➡";
+    position: absolute;
+    font-family: "FontAwesome";
+    height: 65px;
+    width: 65px;
+    background-color: white;
+    border-radius: 50px;
+    top:50%;
+    right: -9%;
+    transform: translate(-50%);
+    box-shadow: 0px 0px 10px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.trooper-card::after{
+    content: "⬅";
+    position: absolute;
+    font-family: "Space Mono";
+    height: 65px;
+    width: 65px;
+    background-color: white;
+    border-radius: 50px;
+    top:50%;
+    left: -40%;
+    transform: translate(-50%);
+    box-shadow: 0px 0px 10px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+
+.trooper-card .bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.trooper-card .bg::before{
+    content: url(./img/imperial.svg);
+    position: absolute;
+    transform: translate(-40%, -10%) rotate(-45deg) scale(0.7);
+}
+
+.stormtrooper{
+    z-index: 99;
+}
+
+.trooper-card .stormtrooper::after{
+    content: url(./img/stormtrooper.png);
+    position: absolute;
+    transform: translate(-50%);
+    z-index: 99;
+}
+
+.trooper-card h1{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.trooper-card span{
+    font-family: "confortaa", sans-serif;
+    font-weight: 200;
+}
+
+.trooper-card .prix{
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+}
+
+.trooper-card .centime{
+    position: absolute;
+    padding-top: 6px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.trooper-card .borders::before{
+    content: "";
+    position: absolute;
+    height: 140px;
+    width: 1px;
+    background-color: gainsboro;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.trooper-card h5{
+    color: white;
+    font-weight: 500;
+}
+
+.trooper-card a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.trooper-card .col-5 h5::before {
+    content: url(./img/load.png);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.trooper-card .col-5 p{
+    color: white;
+}
+
+.trooper-card button{
+    color: white;
+    background-color: #cb2141;
+    padding: 15px 25px;
+    border: 0px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #cb2140;
+    letter-spacing: 2px;
+}
+
+.trooper-card img{
+    width: 20px;
+    position: absolute;
+    bottom: 5%;
+    right: 38%;
+    color: #cb2140;
+}
+
+.trooper-card .wish span{
+    color: white;
+    max-width: 150px;
+    margin-left: 70px;
+}

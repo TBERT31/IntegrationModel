@@ -1,0 +1,229 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "poppins";
+}
+
+body, html, header {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+    overflow: hidden;
+  }
+  
+  * {
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background: linear-gradient(160deg, #2989d8, #010e8b);
+    height: 100vh;
+  }
+  
+  header a {
+    font-size: 0.9em;
+    color: whitesmoke;
+  }
+  
+  header .nav-item {
+    padding: 0.9em;
+  }
+  
+  li.nav-item.active {
+    border: 2px solid white;
+    border-radius: 23px;
+    background: white;
+  }
+  
+  header .nav-item {
+    padding: 0.1em 0.9em;
+  }
+  
+  .navbar-brand {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+  }
+  
+  .active .nav-link {
+    color: black;
+  }
+  
+  .active:hover a {
+    color: black !important;
+  }
+  
+  .nav-item:hover a {
+    color: white !important;
+  }
+  
+  header .row .col-xl-5 {
+    padding: 4.2vmin 1vmin;
+  }
+  
+  header .row .col-xl-7 {
+    font-family: poppins;
+    color: white;
+  }
+  
+  header .row .col-xl-5 img {
+    width: 100%;
+  }
+  
+  header .container-fluid .col-xl-7 h1 {
+    font-size: 7vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+  }
+  
+  header .container-fluid .col-xl-7 p {
+    padding: 2vmin 0vmin;
+    font-style: italic;
+  }
+  
+  header .container-fluid .col-xl-7 button {
+    border-radius: 30px;
+    font-weight: bold;
+  }
+  
+  header .container-fluid .col-xl-7 .btn-discover {
+    background-color: white;
+    color: #212529;
+  }
+  
+  header .container-fluid .col-xl-7 .btn-discover:hover {
+    background-color: transparent;
+    color: white;
+  }
+  
+  header .container-fluid .col-xl-7 .btn-sign {
+    background-color: transparent;
+    color: white;
+  }
+  
+  header .container-fluid .col-xl-7 .btn-sign:hover {
+    background-color: white;
+    color: #212529;
+  }
+  
+  header .xs-banner-image {
+    margin-left: -160px;
+    margin-right: 0px;
+    position: relative;
+  }
+  
+  #ether1 {
+    position: absolute;
+    width: 6%;
+    top: -3%;
+    right: 28%;
+    -webkit-animation: bounce 1s ease-in-out 0s infinite alternate;
+    animation: bounce 1s ease-in-out 0s infinite alternate;
+    animation-delay: 0.3s;
+  }
+  
+  #ether2 {
+    position: absolute;
+    width: 6%;
+    top: 23%;
+    right: 20.5%;
+    -webkit-animation: bounce 1s ease-in-out 0s infinite alternate;
+    animation: bounce 1s ease-in-out 0s infinite alternate;
+    animation-delay: 0.7s;
+  }
+  
+  #ether3 {
+    position: absolute;
+    width: 6%;
+    top: 34%;
+    left: 51%;
+    -webkit-animation: bounce 1s ease-in-out 0s infinite alternate;
+    animation: bounce 1s ease-in-out 0s infinite alternate;
+  }
+  
+  @-webkit-keyframes bounce {
+      0% {
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px)
+      }
+      to {
+          -webkit-transform: translateY(-30px);
+          transform: translateY(-30px)
+      }
+  }
+  
+  @keyframes bounce {
+      0% {
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px)
+      }
+      to {
+          -webkit-transform: translateY(-30px);
+          transform: translateY(-30px)
+      }
+  }
+  
+  #bloc1 {
+    position: absolute;
+    width: 5%;
+    bottom: 32.5%;
+    left: 30.8%;
+    -webkit-animation: bounceCube 1s ease-in-out 0s infinite alternate;
+    animation: bounceCube 1s ease-in-out 0s infinite alternate;
+    animation-delay: 0.4s;
+  }
+  
+  #bloc2 {
+    position: absolute;
+    width: 5%;
+    bottom: 16%;
+    left: 48%;
+    -webkit-animation: bounceCube 1s ease-in-out 0s infinite alternate;
+    animation: bounceCube 1s ease-in-out 0s infinite alternate;
+    animation-delay: 0.6s;
+  }
+  
+  #bloc3 {
+    position: absolute;
+    width: 5%;
+    bottom: 29.5%;
+    right: 35.2%;
+    -webkit-animation: bounceCube 1s ease-in-out 0s infinite alternate;
+    animation: bounceCube 1s ease-in-out 0s infinite alternate;
+    animation-delay: 0.1s;
+  }
+  
+  @-webkit-keyframes bounceCube {
+      0% {
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px)
+      }
+      to {
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px)
+      }
+  }
+  
+  @keyframes bounceCube {
+      0% {
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px)
+      }
+      to {
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px)
+      }
+  }
+  
+  .big-card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }

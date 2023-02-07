@@ -1,0 +1,131 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Space Mono";
+    overflow: hidden;
+}
+
+header img {
+ border-radius: 50px;   
+}
+
+header ul li a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+header ul li a:hover{
+    color: grey;
+}
+
+header button i{
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.landing{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(./img/space.jpg);
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(360deg, #000, transparent);
+}
+
+section::after{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 150px;
+    pointer-events: none;
+}
+
+.landing .row {
+    padding-top: 3em;
+    height: 100vh;
+    padding-bottom: 5vh;
+}
+
+.landing .col-lg-8{
+    padding-left: 50px;
+    display: flex;
+    flex-flow: column;
+}
+
+.landing .center-title{
+    height: 85%;
+    justify-content: center;
+}
+
+.landing span, h1, h5{
+    color: white;
+}
+
+.landing span {
+    padding-bottom: 40px;
+    text-shadow: 0px 0px 8px #fff;
+}
+
+.landing h1{
+    font-size: 7rem;
+    text-shadow: 0px 0px 8px #fff;
+}
+
+.landing h5{
+    padding-bottom: 20px;
+    text-shadow: 0px 0px 8px #fff;
+}
+
+.landing p{
+    max-width: 80%;
+    font-family: "poppins";
+    color: gray;
+}
+
+.navbar-toggler span img{
+    width: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+    .landing h1{
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .landing .center-title{
+        height: 65%;
+        text-align: center;
+    }
+
+    .landing h1{
+        font-size: 4rem !important;
+    }
+
+    .landing .col-lg-8{
+        padding-left: 0px !important;
+    }
+
+    .landing .col-lg-3{
+        text-align: center;
+    }
+
+    .landing .col-lg-3 p{
+        color: whitesmoke;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,19 @@
+*, ::before, ::after, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sec1{
+    height: 100vh;
+    background: linear-gradient(to right, #f12711, #f5af19);
+}
+
+section svg{
+    position: absolute;
+    bottom: 0;
+}
+
+.sec2{
+    height: 100vh;
+}
